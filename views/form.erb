@@ -1,0 +1,16 @@
+
+<form action='<%= @brewery.nil? ? "/breweries" : "/breweries/#{@brewery.id}" %>' method='post'>
+  <div>
+    <label>Name:</label>
+    <input value='<%= @brewery['brewery_name'] if @brewery %>' type='text' name='brewery[brewery_name]' autofocus/>
+  </div>
+  <div>
+    <label>City:</label>
+    <input value='<%= @brewery['city'] if @brewery %>' type='text' name='brewery[city]'/>
+  </div>
+  <div>
+    <label>State:</label>
+    <input value='<%= @brewery['state'] if @brewery %>' type='text' name='brewery[state]'/>
+  </div>
+  <button><%= @brewery.nil? ? "Edit Brewery" : "Edit Brewery" %></button>
+</form>

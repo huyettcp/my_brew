@@ -1,0 +1,9 @@
+<form method='post' action='/breweries/create_beer/<%= @brewery_id %>'>
+  <div>
+    <label>Beer Name:</label>
+    <input type='text' name='beer[beer_name]' autofocus/>
+    <input type='text' name='beer[a_b_v]' autofocus/>
+    <input type='text' name='beer[style]' autofocus/>
+  </div>
+  <button>Add Beer</button>
+</form>

@@ -1,0 +1,21 @@
+<section>
+  <h3><%= @brewery.brewery_name %></h3> is a <h4><%= @brewery.city%></h4><h4><%= @brewery.state%></h4>
+  <br>
+  <a href='/breweries/edit/<%= @brewery.id %>'>Edit</a>
+    <form action='/breweries/delete/<%= @brewery.id %>' method='post'>
+    <button>Delete</button>
+  </form>
+    <% if !@brewery.beer.empty? %>
+    <br>
+    <br>
+    <h3>Beers:</h3>
+    <% @brewery.beer.each do |beer|%>
+      <p><%= beer.beer_name %></p>
+      <p><%= beer.a_b_v %></p>
+      <p><%= beer.style %></p>
+    <% end %>
+  <% end %>
+
+</section>
+
+</section>
