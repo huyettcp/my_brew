@@ -1,17 +1,16 @@
 
 <h1>Home Page</h1>
 
-<!-- 
+
 <% if @nav_breweries %>
   <% @nav_breweries.each do |brewery| %>
     <section>
       <h1><%= brewery.brewery_name %></h1> 
       <h4><%= brewery.city %>, <%= brewery.state %></h4>
-      <a href='/breweries/edit'>Edit</a>
+      <a href='/breweries/edit/<%= brewery.id %>'>Edit</a>
         <% end %>
     </section>
 <% end %>
 
 <a href="breweries/form">Add a brewery</a>
 
- -->

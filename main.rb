@@ -4,7 +4,7 @@ require 'sinatra'
 require 'active_support/all'
 require 'active_record'
 
-ActiveRecord::Base.establish_connection(ENV['DATABASE_URL']) || 'postgres://localhost/database'
+# ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'])
 
 # ActiveRecord::Base.establish_connection(
 #   :adapter => "postgresql",
@@ -96,14 +96,6 @@ post '/breweries/create_beer/:brewery_id' do
 
   redirect '/breweries'
 end
-
-
-
-
-
-
-
-
 
 
 
