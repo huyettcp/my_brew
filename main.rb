@@ -6,13 +6,13 @@ require 'active_record'
 
 ActiveRecord::Base.establish_connection(ENV['http://shrouded-mountain-7345.herokuapp.com/database']) || 'postgres://localhost/database'
 
-ActiveRecord::Base.establish_connection(
-  :adapter => "postgresql",
-  :host => "localhost",
-  :username => "christopherhuyett",
-  :password => "",
-  :database => "breweries_and_beers"
-)
+# ActiveRecord::Base.establish_connection(
+#   :adapter => "postgresql",
+#   :host => "localhost",
+#   :username => "christopherhuyett",
+#   :password => "",
+#   :database => "breweries_and_beers"
+# )
 
 ActiveRecord::Base.logger = Logger.new(STDOUT)
 
